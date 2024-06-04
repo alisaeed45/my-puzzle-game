@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الألغاز</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>لعبة الألغاز</h1>
+        <div id="auth-container">
+            <div id="register">
+                <h2>إنشاء حساب</h2>
+                <form id="register-form">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="name">اسم العميل:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="username">اسم المستخدم:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">كلمة المرور:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label for="confirm-password">تأكيد كلمة المرور:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    
+                    <button type="submit">إنشاء حساب</button>
+                </form>
+            </div>
+            
+            <div id="login">
+                <h2>تسجيل الدخول</h2>
+                <form id="login-form">
+                    <label for="login-username">اسم المستخدم:</label>
+                    <input type="text" id="login-username" name="login-username" required>
+                    
+                    <label for="login-password">كلمة المرور:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                    
+                    <button type="submit">تسجيل الدخول</button>
+                </form>
+                <button id="forgot-password">نسيت كلمة المرور</button>
+                <button id="forgot-username">نسيت اسم المستخدم</button>
+            </div>
+        </div>
+        
+        <div id="game-container" style="display: none;">
+            <button id="start-game">ابدأ اللعبة</button>
+            <button id="restart-game">إعادة اللعبة</button>
+            <button id="end-game">إنهاء اللعبة</button>
+            
+            <div id="puzzle">
+                <p id="question"></p>
+                <input type="text" id="answer" placeholder="أدخل إجابتك هنا">
+                <button id="submit-answer">إرسال الإجابة</button>
+                <p id="feedback"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
